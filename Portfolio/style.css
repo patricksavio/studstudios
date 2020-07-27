@@ -1,0 +1,537 @@
+.parallax {
+  /* The image used */
+  background-image: url("beach.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 70%;
+  position: absolute;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid cornflowerblue;
+  top: 0;
+}
+
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+.animated-title > div div {
+  font-size: 12vmin; /* for demo purposes */
+  padding: 2vmin 0;
+  position: absolute;
+}
+
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+  
+}
+
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 3.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+  
+}
+
+.animated-title > div div span {
+  display: block;
+}
+
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+
+
+
+.slide-right {
+  width: 100%;
+  overflow:hidden;
+  margin-left: 30px;
+  max-width: 1100px
+}
+
+.slide-right h1 {
+  animation: 2s slide-right;
+  animation-delay: 0s;
+}
+
+@keyframes slide-right {
+   from {
+      margin-left: -500px;
+   }
+
+   to {
+      margin-left: 31px;
+   }
+}
+
+
+
+
+.butn{
+position:relative;
+height:60px;
+width:200px;
+margin: 0 35px;
+border-radius: 50px;
+border:none;
+outline: none;
+background:#111;
+color: #fff;;
+font-size: 20px;
+letter-spacing: 2px;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+.butn:hover{
+background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+background-size: 400%;
+z-index: 1;
+animation: glow 8s linear infinite;
+}
+
+.butn:before{
+  content: "";
+  position:absolute;
+  background: inherit;
+  top:-5px;
+  right:-5px;
+  bottom:-5px;
+  left:-5px;
+  border-radius: 50px;
+  filter:blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.butn:hover:before{
+opacity: 1;
+z-index: -1;
+}
+
+@keyframes glow{
+0%{
+  background-position: 0%;
+}
+100%{
+  background-position: 400%;
+}
+}
+
+/* spin txt */
+
+#spin {
+  color:floralwhite;
+}
+#spin:after {
+  content:"";
+  animation: spin 6s linear infinite;
+}
+@keyframes spin {
+  0% { content:"ipsum"; }
+  10% { content:"dolor"; }
+  20% { content:"sit"; }
+  30% { content:"amet"; }
+  40% { content:"consectetur"; }
+  50% { content: "adipisicing"; }
+  60% { content: "elit"; }
+  70% { content: "Hic"; }
+  80% { content: "atque"; }
+  90% { content: "fuga"; }
+}
+
+
+.profile-card-1 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  height:368px;
+  border:none;
+}
+.profile-card-1 .background {
+  width:100%;
+  vertical-align: top;
+  opacity: 0.9;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+   -webkit-transform: scale(2.8);
+  transform: scale(3.8);
+}
+.profile-card-1 .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.profile-card-1 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgb(135, 150, 238);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.profile-card-1 h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:25px;
+}
+.profile-card-1 h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top:10px;
+}
+.profile-card-1 i {
+  display: inline-block;
+    font-size: 16px;
+    color: #0882bb;
+    text-align: center;
+    border: 0px solid #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.profile-card-1 .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+.profile-card-1 .icon-block a{
+    text-decoration:none;
+}
+.profile-card-1 i:hover {
+  color:rgb(115, 223, 13);
+  text-decoration:none;
+}
+
+section{
+  float:left;
+  width:100%;
+  background: #fff;  /* fallback for old browsers */
+  padding:30px 0;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("profileBG.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The Overlay (background) */
+.overlay {
+	/* Height & width depends on how you want to reveal the overlay (see JS below) */   
+	height: 100%;
+	width: 0;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0); /* Black fallback color */
+	background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+	position: relative;
+	top: 25%; /* 25% from the top */
+	width: 100%; /* 100% width */
+	text-align: center; /* Centered text/links */
+	margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block; /* Display block instead of inline */
+	transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+	}
+  }
+
+  .butno{
+    position: relative;
+    min-width:230px;
+    margin:1em;
+    padding:0.3em;
+    background: linear-gradient(to right,#56ccf2,#2f88cd);
+    border: 0;
+    cursor:pointer;
+    border-radius: 50px;
+  }
+  
+  .butno span{
+    position: relative;
+    z-index: 3;
+    display: block;
+    padding:0.3em;
+    font-family: cursive;
+    font-size: 1.3em;
+    font-weight: bold;
+    color:#fff;
+    text-transform: uppercase;
+    background-color: #2c2e36;
+    border-radius: 17px;
+  }
+  
+  .butno:hover::before{
+    filter: blur(5px);
+  }
+  .butno:hover::after{
+    filter: blur(5px);
+  }
+  .butno::before,
+  .butno::after{
+    content:'';
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background: linear-gradient(to right,#56ccf2,#2f88cd);
+    border-radius: 27px;
+    transition: all .5s ease-in-out;
+  }
+  .butno:hover{
+    animation: hue 3s linear infinite;
+  }
+  
+  @keyframes hue{
+    0%{
+      filter:hue-rotate(0deg)
+    }
+    100%{
+      filter: hue-rotate(360deg)
+    }
+  }
+
+  footer {
+    background: #16222A;
+    background: -webkit-linear-gradient(59deg, #3A6073, rgb(4, 148, 245));
+    background: linear-gradient(59deg, rgb(2, 165, 247), rgb(13, 13, 14));
+    color: rgb(0, 3, 5);
+    margin-top:100px;
+    }
+    
+    footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+    }
+    
+    footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+    }
+    
+    .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+    }
+    
+    .footer-middle {
+    padding-top: 2em;
+    color: white;
+    }
+    
+    
+    /*SOCİAL İCONS*/
+    
+    /* footer social icons */
+    
+    ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+    }
+    
+    ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+    }
+    
+    
+    /* footer social icons */
+    
+    .social-network a.icoFacebook:hover {
+        background-color: rgb(42, 7, 241);
+    }
+    .social-network a.icoGithub:hover {
+         
+      }
+    
+    .social-network a.icoLinkedin:hover {
+       color: #720ef5;
+    }
+    .social-network a.icoInsta:hover {
+      background:linear-gradient(red,rgb(106, 106, 233));
+      }
+      .social-network a.icoInsta:hover i{
+        color:rgb(249, 251, 252);
+      }
+    .social-network a.icoFacebook:hover i,
+    .social-network a.icoLinkedin:hover i {
+    color:skyblue;
+    }
+    
+    .social-network a.socialIcon:hover,
+    .socialHoverClass {
+    color: rgb(216, 12, 12);
+    }
+    
+    .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    }
+    
+    .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    }
+    
+    .social-circle li a:hover i,
+    .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+    }
+    
+    .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+    }
+    
+    .social-network a {
+    background-color: #F9F9F9;
+    }
+    
+    ::-webkit-scrollbar {
+      background-color:#fff;
+    width:6px;
+    height:px;
+  }
+  
+  /* background of the scrollbar except button or resizer */
+  ::-webkit-scrollbar-track {
+      background-color:rgb(55, 115, 243)
+  }
+  ::-webkit-scrollbar-track:hover {
+      background-color:#0cb8ec
+  }
+  
+  /* scrollbar itself */
+  ::-webkit-scrollbar-thumb {
+      background-color:#f8fbfc;
+      border-radius:16px;
+      border:0px solid #fff
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background-color:#0732f3;
+      border:0px solid #f4f4f4
+  }
+  
+  /* set button(top and bottom of the scrollbar) */
+  ::-webkit-scrollbar-button {display:none}
+  
+  
+  
+  /

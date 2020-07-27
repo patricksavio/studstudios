@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+       <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width,initial-scale=1">
+	   <link rel="stylesheet" href="style.css">
+	   <link rel="stylesheet" href="checkStyle.css">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <style type="text/css">
+		html,
+  body {
+	overflow-x: hidden;
+  }
+
+.navbar-light .navbar-nav .nav-link {
+  color: grey;
+  transition: 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+  color:black;
+  border-bottom: 2px solid cornflowerblue;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+	  </style>
+	  <script>
+		function openNav() {
+document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.width = "0%";
+}
+	</script>
+   </head>
+<body>
+	<header class="header">
+		<nav class="navbar navbar-expand-md bg-white navbar-light m-4" style="box-shadow:0px 3px 1px cadetblue;">
+			<div class="navbar-header">
+			<a class="navbar-brand ml-0" href="#">Name</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item pr-4"><a class="nav-link" href="">Home</a></li>
+				<li class="nav-item pr-4"><a class="nav-link" href=>Home</a></li>
+				<li class="nav-item pr-4"><a class="nav-link" href="">Home</a></li>
+				<li class="nav-item pr-4"><a class="nav-link" href="">Home</a></li>
+				<li class="nav-item pr-4"><a class="nav-link" href="">Home</a></li>
+			</ul>
+		</div> 
+		</nav>
+	</header>
+	<div class="row container m-3 ">
+		<div class="col-sm-6 p-5 slide-right" style="margin-top: 30px;margin-left: 30px;border-right: 4px solid black;">
+			<h1 style="padding: px;font-size: 60px;margin-left: 30px;margin-bottom: 20px;"><span class="" style="font-size: 50px;">What </span></h1> <h1 style="padding: 2px;font-size: 40px;margin-left: 30px;margin-bottom: 20px;">We D<span class="" style="font-size: 40px;">O</span>?</h1>
+			<h1 style="margin-left:30px;"><button style="margin-top: -50px;" class="butn" onclick="openNav()">LOOK</Button></h1>
+		</div>
+		<div class="d-none d-lg-block">
+			<div class="animated-title">
+				<div class="text-top">
+				  <div>
+					<span>Mimicking</span>
+					<span>Apple's design</span>
+				  </div>
+				</div>
+				<div class="text-bottom">
+				  <div>for the win!</div>
+				</div>
+			  </div>
+		</div>
+	</div>
+	<div class="row container-fluid parallax no-gutters" style="margin-top: 100px;position: relative;">
+		<div class="col-sm-6">
+		<h1 class="ml-5" style="margin-top: 90px;">We Create <span class="" id="spin"></span>!</h1>
+		<button style="margin-top: 50px;margin-left: 100px;" class="butn" onclick="openNav()">take a LOOK</Button>
+	   </div>
+	   <div class="col-sm-6 mt-5 d-none d-lg-block">
+		<div class="jumbotron" style="opacity: 0.6;">
+			<h1>Bootstrap Tutorial</h1>
+			<p>Bootstrap is the most popular HTML, CSS...fafashfaufkasjfkajsfbkjasbfjbasfbasfbfhasfbashbfasdbahsdbabdh</p>
+			
+		  </div>
+	   </div>
+	</div>
+	<div class="row container-fluid no-gutters parallax1" style="overflow:auto;">
+		<h1 class="text-center p-3" style="width: 100%;color: blanchedalmond;">Our Team</h1>
+		<div class="card-deck">
+			<div class="col-sm-3 mx-auto">
+    		    <div class="card profile-card-1" >
+    		        <img src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background"/>
+    		        <img src="download.png" alt="profile-image" class="profile"/>
+                    <div class="card-content">
+                    <h2>Savannah Fields<small>Engineer</small></h3>
+						<div class="icon-block"><ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoInsta" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoGihub" title="Github"><i class="fa fa-github"></i></a></li>
+						   </ul>	</div>
+                    </div>
+                </div>
+                <p class="mt-3 w-100 float-left text-center"><button class="butn">pr0file</button></p>
+    		</div>
+			  <div class="col-sm-3 mx-auto">
+    		    <div class="card profile-card-1">
+    		        <img src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background"/>
+    		        <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="profile-image" class="profile"/>
+                    <div class="card-content">
+                    <h2>Savannah Fields<small>Engineer</small></h3>
+						<div class="icon-block"><ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoInsta" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoGihub" title="Github"><i class="fa fa-github"></i></a></li>
+						   </ul>	</div>
+                    </div>
+                </div>
+                <p class="mt-3 w-100 float-left text-center"><strong>Basic Profile Card</strong></p>
+			</div>
+			<div class="col-sm-3 mx-auto">
+    		    <div class="card profile-card-1">
+    		        <img src="https://images.pexels.com/photos/946351/pexels-photo-946351.jpeg?w=500&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background"/>
+    		        <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="profile-image" class="profile"/>
+                    <div class="card-content">
+                    <h2>Savannah Fields<small>Engineer</small></h3>
+						<div class="icon-block"><ul class="social-network social-circle">
+							<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" class="icoInsta" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="icoGihub" title="Github"><i class="fa fa-github"></i></a></li>
+						   </ul>	</div>
+                    </div>
+                </div>
+                <p class="mt-3 w-100 float-left text-center"><strong>Basic Profile Card</strong></p>
+    		</div>
+		  </div>
+	</div>
+	<div id="myNav" class="overlay">
+	
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<h1 class="m-5" style="color:skyblue">Our Services</h1>
+			<button class="butno"><span>Website Design</span></button>
+			<button class="butno"><span>Web Apps</span></button>
+			<button class="butno" onclick=document.location='check.html'><span>Digital art</span></button>
+			<button class="butno"><span>Card design</span></button>
+			<button class="butno"><span>Ui/ux</span></button>
+		</div>
+	 </div>
+	 <footer class="mainfooter m-0 " role="contentinfo">
+		<div class="footer-middle">
+		<div class="container">
+		  <div class="row">
+			<div class=" col-sm-3 text-center">
+			  <!--Column1-->
+			  <div class="footer-pad" style="height: 5px;">
+				<img src="paint.jpg" alt="loho" style="width: 100px; margin-top: 50px;">
+			  </div>
+			</div>
+			<div class="col-sm-6">
+			  <!--Column1-->
+			  <div class="footer-pad">
+				<h4>Contact Us</h4>
+				<ul class="list-unstyled">
+					<li><a href="#" class="icoFacebook " ><i class="fa fa-phone fa-2x p-3"></i><span style="font-size: 30px;">944531234212</span></a></li>
+					<li><a href="#" class="icoFacebook " ><i class="fa fa-envelope fa-2x p-3"></i><span style="font-size: 30px;">studstudios@hotmail.com</span></a></li>
+					<li><a href="#" class="icoFacebook "><i class="fa fa-map-marker fa-2x p-3"></i><span style="font-size: 30px;">Chennai,India</span></a></li>
+				</ul>
+			  </div>
+			</div>
+			  <div class="col-sm-3">
+				  <h4>small descrition</h4>
+				  wempofjalfkmsakmflkafmaklfmakslfmlka<br>
+				  ndjndjndsjadnjasdnkjadsnjndskjnadskjnds
+				  <h6 class="p-2">small descrition</h6>
+				  <ul class="social-network social-circle">
+					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#" class="icoInsta" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="icoGihub" title="Github"><i class="fa fa-pinterest"></i></a></li>
+				  </ul>				
+			  </div>
+		  </div>
+		  <div class="row">
+			  <div class="col-md-12 copy">
+				  <p class="text-center">&copy; Copyright 2018 - Company Name.  All rights reserved.</p>
+			  </div>
+		  </div>
+	  
+	  
+		</div>
+		</div>
+	  </footer>
+	  <center>
+		<div class="scrollbar">
+		  <div class="overflow"></div>
+		</div>
+	  <center>
+</body>
+</html>
